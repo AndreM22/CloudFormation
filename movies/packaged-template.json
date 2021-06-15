@@ -13,7 +13,7 @@ Resources:
             Ref: MoviesTable
       Handler: movies.getMovie
       Runtime: python3.6
-      CodeUri: s3://cloud-formation-practica-movie/e217fb765f469e2b17ac7dac1ca8e4ec
+      CodeUri: s3://cloud-formation-practica-movie/e64beffedb56e3274d5adf0ce6fb7904
       Policies:
       - DynamoDBReadPolicy:
           TableName:
@@ -36,7 +36,7 @@ Resources:
             Ref: MoviesTable
       Handler: movies.putMovie
       Runtime: python3.6
-      CodeUri: s3://cloud-formation-practica-movie/e217fb765f469e2b17ac7dac1ca8e4ec
+      CodeUri: s3://cloud-formation-practica-movie/e64beffedb56e3274d5adf0ce6fb7904
       Policies:
       - DynamoDBWritePolicy:
           TableName:
@@ -59,7 +59,7 @@ Resources:
             Ref: MoviesTable
       Handler: movies.getMovieByRoom
       Runtime: python3.6
-      CodeUri: s3://cloud-formation-practica-movie/e217fb765f469e2b17ac7dac1ca8e4ec
+      CodeUri: s3://cloud-formation-practica-movie/e64beffedb56e3274d5adf0ce6fb7904
       Policies:
       - DynamoDBWritePolicy:
           TableName:
@@ -82,7 +82,7 @@ Resources:
             Ref: MoviesTable
       Handler: movies.getRoom
       Runtime: python3.6
-      CodeUri: s3://cloud-formation-practica-movie/e217fb765f469e2b17ac7dac1ca8e4ec
+      CodeUri: s3://cloud-formation-practica-movie/e64beffedb56e3274d5adf0ce6fb7904
       Policies:
       - DynamoDBReadPolicy:
           TableName:
@@ -105,7 +105,7 @@ Resources:
             Ref: MoviesTable
       Handler: movies.putPeopleList
       Runtime: python3.6
-      CodeUri: s3://cloud-formation-practica-movie/e217fb765f469e2b17ac7dac1ca8e4ec
+      CodeUri: s3://cloud-formation-practica-movie/e64beffedb56e3274d5adf0ce6fb7904
       Policies:
       - DynamoDBWritePolicy:
           TableName:
@@ -128,7 +128,7 @@ Resources:
             Ref: MoviesTable
       Handler: movies.getPerson
       Runtime: python3.6
-      CodeUri: s3://cloud-formation-practica-movie/e217fb765f469e2b17ac7dac1ca8e4ec
+      CodeUri: s3://cloud-formation-practica-movie/e64beffedb56e3274d5adf0ce6fb7904
       Policies:
       - DynamoDBReadPolicy:
           TableName:
